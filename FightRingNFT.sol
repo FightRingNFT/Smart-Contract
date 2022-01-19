@@ -383,11 +383,11 @@ contract FightRingNftToken is Context, IERC20, Ownable {
     string private _name = "Fight Ring NFT";
     string private _symbol = "FRNT";
     uint8 private _decimals = 18;
-    uint256 private _taxFee = 10;
+    uint256 private _taxFee = 1;
     uint256 private _previousTaxFee = _taxFee;
-    uint256 private _developmentFee = 30;
+    uint256 private _developmentFee = 3;
     uint256 private _previousDevelopmentFee = _developmentFee;
-    uint256 public _liquidityFee = 10;
+    uint256 public _liquidityFee = 1;
     uint256 private _previousLiquidityFee = _liquidityFee;
 
     IUniswapV2Router02 public immutable uniswapV2Router;
